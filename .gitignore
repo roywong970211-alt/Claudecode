@@ -1,0 +1,5 @@
+.claude/skills/yt-research/output/
+.claude/skills/notebooklm/output/
+__pycache__/
+*.pyc
+.venv/

@@ -1,0 +1,2 @@
+yt-dlp>=2024.3.10
+notebooklm-py @ git+https://github.com/teng-lin/notebooklm-py.git
