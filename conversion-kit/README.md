@@ -9,8 +9,11 @@ by swapping data — not code.
 
 | File | What it is |
 |---|---|
-| `ConversionKit.jsx` | The component library — 12 blocks + `StarRating`, all exported. |
-| `DemoLandingPage.jsx` | Reference page wiring every block in the recommended order. |
+| `ConversionKit.jsx` | Landing-page library — 12 blocks + `StarRating`. |
+| `DemoLandingPage.jsx` | Reference landing page wiring every block in order. |
+| `StoreBlocks.jsx` | Store/collection blocks distilled from the real IM8 screenshots: `ProductCard`, `ProductCarousel`, `StickyOfferBar`, `TrustBadgeBar`, `PriceBlock`, `BenefitPills`, `AuthorityArticleCard`, `formatPrice`. |
+| `StoreDemo.jsx` | Reference store (good-better-best carousel with a BEST VALUE bundle) built from the actual IM8 data. |
+| `LESSONS.md` | Each observed IM8 tactic mapped to the component/prop that applies it. |
 
 ## Requirements
 
