@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v uv >/dev/null 2>&1 && { uv tool install -q markitdown-mcp 2>/dev/null; uv tool install -q 'markitdown[all]' 2>/dev/null; }; true"
+          }
+        ]
+      }
+    ]
+  }
+}
