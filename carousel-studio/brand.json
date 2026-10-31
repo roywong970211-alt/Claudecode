@@ -1,0 +1,46 @@
+{
+  "brand": "healwithroy",
+  "handle": "@healwithroy",
+  "tagline": "Rebuild failing discs through nutrition + movement — without surgery.",
+  "thesis": "Pain relief removes the symptom. The environment that caused the disc to fail is still there. Fix the environment.",
+  "markets": ["MY", "SG", "BN", "AU"],
+  "geo_line": "🇲🇾🇸🇬🇧🇳🇦🇺",
+  "canvas": { "width": 1080, "height": 1350 },
+  "language": { "primary": "en", "secondary": "ms", "secondary_ratio": 0.1 },
+  "voice": "calm authority, plain language, slightly contrarian, no hype, no emoji walls, short sentences, concrete anatomy, one idea per slide",
+  "colors": {
+    "brand": "#0e7c6b",
+    "brandDeep": "#0a5c50",
+    "ink": "#1f2937",
+    "muted": "#6b7280",
+    "line": "#e5e7eb",
+    "surface": "#ffffff",
+    "page": "#f4f6f8",
+    "green": "#2e7d32", "greenBg": "#eaf6ea",
+    "amber": "#b26a00", "amberBg": "#fff6e6",
+    "red": "#c62828", "redBg": "#fdecec",
+    "blue": "#1565c0", "blueBg": "#e9f2fc"
+  },
+  "type": {
+    "stack": "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif",
+    "display_weight": 800,
+    "body_weight": 400
+  },
+  "form": {
+    "card_radius_px": 24,
+    "cover": "deep-teal 135deg gradient, white text",
+    "interior": "light #f4f6f8 page, teal accents, rounded cards, pill tags, left-border flag callouts"
+  },
+  "cta": {
+    "keywords": ["DISC", "SPINE", "NECK", "SCIATICA"],
+    "offer": "free 1-on-1 spine recovery assessment",
+    "hard_cta_ratio": "6-7 of 10 posts"
+  },
+  "compliance": [
+    "never claim cure/reverse/replace surgery — use 'recovery environment', 'support healing'",
+    "cauda equina / red-flag symptoms must say 'see a doctor immediately'",
+    "no 'throw away painkillers / cancel surgery'",
+    "testimonials real, with permission, framed as individual results",
+    "assessment not diagnosis; coach/nutritionist, not physician"
+  ]
+}

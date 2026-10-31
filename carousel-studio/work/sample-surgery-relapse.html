@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sample — Surgery removed the pain</title>
+<style>
+  :root{
+    --brand:#0e7c6b; --brand-deep:#0a5c50; --ink:#1f2937; --muted:#6b7280;
+    --line:#e5e7eb; --surface:#fff; --page:#f4f6f8;
+    --green:#2e7d32; --green-bg:#eaf6ea; --amber:#b26a00; --amber-bg:#fff6e6;
+    --red:#c62828; --red-bg:#fdecec; --blue:#1565c0; --blue-bg:#e9f2fc;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --safe:72px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:#111;color:var(--ink)}
+  .slide{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--page);
+    display:flex;flex-direction:column;padding:var(--safe);margin:0 auto 40px}
+  .eyebrow{font-size:28px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--brand)}
+  .eyebrow.amber{color:var(--amber)}.eyebrow.green{color:var(--green)}.eyebrow.red{color:var(--red)}.eyebrow.muted{color:var(--muted)}
+  h1{font-weight:800;line-height:1.04;letter-spacing:-.02em}
+  h2{font-weight:800;line-height:1.08;letter-spacing:-.01em;font-size:72px}
+  p.body{font-size:38px;line-height:1.4;color:var(--ink)}
+  p.sub{font-size:34px;line-height:1.45;color:var(--muted)}
+  .handle{position:absolute;left:var(--safe);bottom:52px;font-size:26px;font-weight:700;color:var(--brand);opacity:.85}
+  .swipe{position:absolute;right:var(--safe);bottom:52px;font-size:28px;font-weight:800;color:var(--brand)}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:48px;box-shadow:0 2px 6px rgba(0,0,0,.04)}
+  .flag{border-left:10px solid;border-radius:16px;padding:32px 36px;font-size:34px;line-height:1.4}
+  .flag.blue{border-color:var(--blue);background:var(--blue-bg);color:#0d3c73}
+  .flag.green{border-color:var(--green);background:var(--green-bg);color:#1b4d1f}
+  .flag.amber{border-color:var(--amber);background:var(--amber-bg);color:#6a3f00}
+  .flag.red{border-color:var(--red);background:var(--red-bg);color:#7a1414}
+  .cover-hook,.cover-quote,.cta-keyword{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;justify-content:center}
+  .cover-hook .eyebrow{color:rgba(255,255,255,.85)}
+  .cover-hook h1{font-size:92px;margin-top:24px}
+  .cover-hook .handle,.cta-keyword .handle{color:rgba(255,255,255,.9)}
+  .cover-hook .swipe,.cta-keyword .swipe{color:#fff}
+  .mechanism{justify-content:center;gap:40px}
+  .assumption-reframe{justify-content:center;gap:36px}
+  .stat{justify-content:center;align-items:center;text-align:center;gap:24px}
+  .stat .big{font-size:220px;font-weight:800;color:var(--brand);line-height:.9;letter-spacing:-.04em}
+  .cta-keyword{align-items:center;text-align:center;gap:36px}
+  .cta-keyword .keyword{font-size:150px;font-weight:800;letter-spacing:-.02em}
+  .cta-keyword .geo{font-size:48px}
+</style>
+</head>
+<body>
+
+<!-- 01 COVER -->
+<section class="slide cover-hook">
+  <div class="eyebrow">Slip disc · after surgery</div>
+  <h1>Surgery removed the pain.<br>2 years later — same disc.</h1>
+  <div class="handle">@healwithroy</div>
+  <div class="swipe">swipe →</div>
+</section>
+
+<!-- 02 AGITATE -->
+<section class="slide mechanism">
+  <div class="eyebrow red">The part nobody explained</div>
+  <h2>The operation fixed the damage.<br>It never touched what caused it.</h2>
+  <p class="sub">So the same disc, under the same load, fails the same way.</p>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 03 MECHANISM -->
+<section class="slide mechanism">
+  <div class="eyebrow">What's actually happening</div>
+  <h2>A disc doesn't "slip" in a day.</h2>
+  <p class="sub">It's the last stage of years of load, posture and inflammation.</p>
+  <div class="flag blue">Your disc is ~80% water and has almost no blood supply — it rebuilds slowly, only in the right environment.</div>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 04 REFRAME -->
+<section class="slide assumption-reframe">
+  <div class="eyebrow muted">The assumption</div>
+  <div class="card"><p class="body">"The surgery fixed it, so I'm done."</p></div>
+  <div class="eyebrow">The reframe</div>
+  <div class="card"><p class="body">Surgery removes the <b>symptom</b>. The <b>environment</b> that broke the disc is still there — until you change it.</p></div>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 05 STAT / BRIDGE -->
+<section class="slide stat">
+  <div class="eyebrow">Why nutrition belongs here</div>
+  <div class="big">80%</div>
+  <p class="body">of a disc is water. An inflammatory diet keeps it dehydrated and the healing switched off — stretches alone can't fix that.</p>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 06 WHAT CHANGES -->
+<section class="slide mechanism">
+  <div class="eyebrow green">What actually changes the environment</div>
+  <h2>Load, posture, inflammation, sleep, movement.</h2>
+  <p class="sub">Fix these and the disc stops failing the same way. This is recovery, not a cure — and it works alongside your doctor, not instead of them.</p>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 07 CTA -->
+<section class="slide cta-keyword">
+  <div class="eyebrow">Free spine recovery assessment</div>
+  <div class="keyword">DISC</div>
+  <p class="body" style="color:rgba(255,255,255,.95)">Comment <b>DISC</b> for a free 1-on-1 spine recovery assessment.</p>
+  <div class="geo">🇲🇾🇸🇬🇧🇳🇦🇺</div>
+  <div class="handle">@healwithroy</div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HealWithRoy Carousel</title>
+<!--
+  HealWithRoy carousel template. One <section class="slide ..."> per slide, 1080x1350.
+  Layout classes (see LAYOUT-LIBRARY.md): cover-hook, cover-quote, mechanism, numbered-list,
+  action-result, assumption-reframe, myth-fix, before-after, stat, cta-keyword, cta-follow.
+  Export: node scripts/render.mjs <this-file>.html exports/
+  Fill the [ ... ] slots. Keep text inside the 72px safe inset (the render script checks it).
+-->
+<style>
+  :root{
+    --brand:#0e7c6b; --brand-deep:#0a5c50; --ink:#1f2937; --muted:#6b7280;
+    --line:#e5e7eb; --surface:#fff; --page:#f4f6f8;
+    --green:#2e7d32; --green-bg:#eaf6ea; --amber:#b26a00; --amber-bg:#fff6e6;
+    --red:#c62828; --red-bg:#fdecec; --blue:#1565c0; --blue-bg:#e9f2fc;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    --safe:72px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--sans);background:#111;color:var(--ink)}
+
+  /* Each slide is exactly one Instagram 4:5 frame. The render script screenshots each one. */
+  .slide{
+    position:relative; width:1080px; height:1350px; overflow:hidden;
+    background:var(--page); display:flex; flex-direction:column;
+    padding:var(--safe); margin:0 auto 40px;
+  }
+  /* The safe-area box the overflow check measures against */
+  .safe{position:absolute; inset:var(--safe); pointer-events:none}
+
+  .eyebrow{font-size:28px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; color:var(--brand)}
+  .eyebrow.amber{color:var(--amber)} .eyebrow.green{color:var(--green)}
+  .eyebrow.red{color:var(--red)} .eyebrow.muted{color:var(--muted)}
+  h1{font-weight:800; line-height:1.04; letter-spacing:-.02em}
+  h2{font-weight:800; line-height:1.08; letter-spacing:-.01em; font-size:68px}
+  p.body{font-size:38px; line-height:1.4; color:var(--ink)}
+  p.sub{font-size:34px; line-height:1.45; color:var(--muted)}
+  .handle{position:absolute; left:var(--safe); bottom:52px; font-size:26px; font-weight:700; color:var(--brand); opacity:.85}
+  .swipe{position:absolute; right:var(--safe); bottom:52px; font-size:28px; font-weight:800; color:var(--brand)}
+
+  .card{background:var(--surface); border:1px solid var(--line); border-radius:24px; padding:48px; box-shadow:0 2px 6px rgba(0,0,0,.04)}
+  .flag{border-left:10px solid; border-radius:16px; padding:32px 36px; font-size:34px; line-height:1.4}
+  .flag.blue{border-color:var(--blue); background:var(--blue-bg); color:#0d3c73}
+  .flag.green{border-color:var(--green); background:var(--green-bg); color:#1b4d1f}
+  .flag.amber{border-color:var(--amber); background:var(--amber-bg); color:#6a3f00}
+  .flag.red{border-color:var(--red); background:var(--red-bg); color:#7a1414}
+
+  /* ---------- COVERS ---------- */
+  .cover-hook, .cover-quote, .cta-keyword{
+    background:linear-gradient(135deg,var(--brand),var(--brand-deep)); color:#fff; justify-content:center;
+  }
+  .cover-hook .eyebrow, .cover-quote .eyebrow{color:rgba(255,255,255,.85)}
+  .cover-hook h1{font-size:96px; margin-top:24px}
+  .cover-hook .handle, .cover-quote .handle, .cta-keyword .handle{color:rgba(255,255,255,.9)}
+  .cover-hook .swipe, .cta-keyword .swipe{color:#fff}
+  .cover-quote h1{font-size:88px; margin-top:24px}
+  .cover-quote h1::before{content:open-quote} .cover-quote h1::after{content:close-quote}
+
+  /* ---------- MECHANISM ---------- */
+  .mechanism{justify-content:center; gap:40px}
+  .mechanism h2{font-size:76px}
+
+  /* ---------- NUMBERED LIST ---------- */
+  .numbered-list{justify-content:center; gap:28px}
+  .numbered-list .num{font-size:140px; font-weight:800; color:var(--brand); line-height:.9; letter-spacing:-.04em}
+
+  /* ---------- ACTION / RESULT ---------- */
+  .action-result{justify-content:center; gap:36px}
+  .action-result .card + .card{margin-top:4px}
+
+  /* ---------- ASSUMPTION / REFRAME ---------- */
+  .assumption-reframe{justify-content:center; gap:36px}
+
+  /* ---------- MYTH / FIX ---------- */
+  .myth-fix{justify-content:center; gap:32px}
+
+  /* ---------- BEFORE / AFTER ---------- */
+  .before-after{justify-content:center; gap:28px}
+  .before-after .half{border-radius:24px; padding:44px}
+  .before-after .before{background:var(--red-bg)} .before-after .after{background:var(--green-bg)}
+
+  /* ---------- STAT ---------- */
+  .stat{justify-content:center; align-items:center; text-align:center; gap:24px}
+  .stat .big{font-size:240px; font-weight:800; color:var(--brand); line-height:.9; letter-spacing:-.04em}
+
+  /* ---------- CTA ---------- */
+  .cta-keyword{align-items:center; text-align:center; gap:36px}
+  .cta-keyword .keyword{font-size:150px; font-weight:800; letter-spacing:-.02em}
+  .cta-keyword .geo{font-size:48px}
+  .cta-follow{justify-content:center; gap:28px}
+  .cta-follow h2{color:var(--brand)}
+</style>
+</head>
+<body>
+
+<!-- 01 · COVER -->
+<section class="slide cover-hook">
+  <div class="eyebrow">[CONDITION e.g. SLIP DISC]</div>
+  <h1>[Hook: name the treatment/scenario in line one]</h1>
+  <div class="handle">@healwithroy</div>
+  <div class="swipe">swipe →</div>
+</section>
+
+<!-- 02 · MECHANISM (example interior) -->
+<section class="slide mechanism">
+  <div class="eyebrow">What nobody explained</div>
+  <h2>[The single idea for this slide]</h2>
+  <p class="sub">[One short supporting line.]</p>
+  <div class="flag blue">[Optional mechanism note — concrete anatomy.]</div>
+  <div class="handle">@healwithroy</div>
+</section>
+
+<!-- 0X · CLOSING CTA -->
+<section class="slide cta-keyword">
+  <div class="eyebrow">Free spine recovery assessment</div>
+  <div class="keyword">[DISC]</div>
+  <p class="body" style="color:rgba(255,255,255,.95)">Comment <b>[DISC]</b> for a free 1-on-1 spine recovery assessment.</p>
+  <div class="geo">🇲🇾🇸🇬🇧🇳🇦🇺</div>
+  <div class="handle">@healwithroy</div>
+</section>
+
+</body>
+</html>
