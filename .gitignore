@@ -1,2 +1,6 @@
-carousel-studio/node_modules
+# fonts installed per-folder by setup_fonts.py / npm
+**/node_modules
+# intermediate build output (exports/ is kept)
+recruitment-carousel/out/
+**/__pycache__/
 .DS_Store

@@ -1,0 +1,34 @@
+{
+  "handle": "@roywong",
+  "tagline": "带你用系统建团队,不是追梦",
+  "avatar": null,
+  "mascot": null,
+  "style": {
+    "preset": "noir",
+    "accent": "#D4A24E",
+    "paper": "#14130F",
+    "ink": "#F2EEE4",
+    "display": "Space Grotesk",
+    "display_weight": 800,
+    "body": "Inter",
+    "hand": null,
+    "mono": "Space Mono",
+    "texture": ["grid"],
+    "card_style": "soft",
+    "radius": 14,
+    "border": 0,
+    "chip": "outline",
+    "marker": "bar",
+    "bullet": "dash"
+  },
+  "voice": {
+    "tone": "builder-guide, calm and direct, systems over hype",
+    "case": "sentence",
+    "cta": "keyword",
+    "swipe_cue": "往右滑 →",
+    "cover_sub": "想做第二收入,先看完这几点。",
+    "signature": ["先有系统,再谈规模", "招的是会建的人,不是来追梦的人"],
+    "avoid": ["躺赚", "被动收入", "财富自由", "轻松月入", "保证", "包你"],
+    "emoji": false
+  }
+}
